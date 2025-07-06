@@ -1,151 +1,16 @@
 body {
-  background: linear-gradient(135deg, #1e1e2f 0%, #2a2a3a 100%);
+  background-color: #1e1e2f;
   color: white;
-  min-height: 100vh;
 }
 
-.code-editor {
-  font-family: 'Courier New', Monaco, 'Lucida Console', monospace;
-  height: 200px;
-  background-color: #2d2d3d;
-  border: 1px solid #444;
-  color: #f8f8f2;
-  resize: vertical;
-}
-
-.code-editor:focus {
-  background-color: #363647;
-  border-color: #6c757d;
-  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
-  color: #f8f8f2;
-}
-
-.preview-container {
-  height: 100%;
-}
-
-.iframe-container {
-  position: relative;
-  height: 600px;
-  border-radius: 8px;
-  overflow: hidden;
+textarea {
+  font-family: monospace;
+  height: 150px;
 }
 
 iframe {
   width: 100%;
-  height: 100%;
-  border: 2px solid #444;
-  border-radius: 8px;
+  height: 300px;
+  border: 1px solid #555;
   background: white;
-  transition: all 0.3s ease;
-}
-
-iframe:hover {
-  border-color: #6c757d;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.error-display, .loading-display {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #2d2d3d;
-  border: 2px solid #dc3545;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-}
-
-.loading-display {
-  border-color: #0d6efd;
-  background: #1e1e2f;
-}
-
-.btn-outline-light {
-  border-color: #6c757d;
-  color: #f8f9fa;
-}
-
-.btn-outline-light:hover {
-  background-color: #6c757d;
-  border-color: #6c757d;
-  color: white;
-}
-
-.modal-content {
-  border: none;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.card {
-  transition: transform 0.2s ease;
-  border: none;
-}
-
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.alert {
-  border: none;
-  border-radius: 8px;
-}
-
-/* Fullscreen styles */
-.fullscreen-preview {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  background: white;
-}
-
-.fullscreen-preview iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .code-editor {
-    height: 150px;
-  }
-  
-  .iframe-container {
-    height: 400px;
-    margin-top: 20px;
-  }
-}
-
-/* Syntax highlighting hints */
-.code-editor::placeholder {
-  color: #6c757d;
-  font-style: italic;
-}
-
-/* Custom scrollbar for code editors */
-.code-editor::-webkit-scrollbar {
-  width: 8px;
-}
-
-.code-editor::-webkit-scrollbar-track {
-  background: #2d2d3d;
-}
-
-.code-editor::-webkit-scrollbar-thumb {
-  background: #6c757d;
-  border-radius: 4px;
-}
-
-.code-editor::-webkit-scrollbar-thumb:hover {
-  background: #495057;
 }
